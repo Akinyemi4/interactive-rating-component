@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Click to check solution](https://www.frontendmentor.io/solutions/interactive-rating-component-using-html-css-and-javascript-HsKm1ag3ZO)
 - Live Site URL: [Click to check the live site](https://rating-component-hakinyemi.netlify.app/)
 
 ## My process

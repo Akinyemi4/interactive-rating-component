@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass";
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 450px;
+  border-radius: 35px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+.main-section {
+  background-color: hsl(216, 12%, 8%);
+  padding: 40px;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-bottom: 38px;
+  padding: 18px;
+  border-radius: 50%;
+  height: 58px;
+  background-color: hsl(213, 19%, 18%);
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  color: hsl(217, 12%, 63%);
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  width: 100%;
+}
+.rating {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(213, 19%, 18%);
+  transition: background-color 0.3s;
+}
+.rate,
+.rate:link,
+.rate:visited {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  transition: background-color 0.3s;
+}
+
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.rating:hover .rate {
+  color: #fff;
+}
+.clicked,
+.clicked:hover {
+  background-color: hsl(216, 12%, 54%);
+}
+.clicked .rate {
+  color: #fff;
+}
+.main-btn,
+.main-btn:link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+
+  padding: 15px;
+  border-radius: 100px;
+
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.main-btn:hover,
+.main-btn:active {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* //////////////////////////// */
+/* SECTION THANKS */
+/* //////////////////////////// */
+
+.thank-section {
+  background-color: hsl(216, 12%, 8%);
+  padding: 40px;
+}
+.icon-thanks {
+  height: 118px;
+  margin-bottom: 36px;
+}
+.selected-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+.selected-text {
+  width: 65%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+}
+.thank-section .text {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0px;
+}
+.align-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  section {
+    width: 375px;
+    border-radius: 20px;
+  }
+  .main-section {
+    padding: 30px 30px;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .text,
+  .thank-section .text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .ratings {
+    /* gap: px; */
+  }
+  .rating {
+    width: 55px;
+    height: 55px;
+  }
+  .rate {
+    font-size: 15px;
+  }
+  .main-btn,
+  .main-btn:link {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
